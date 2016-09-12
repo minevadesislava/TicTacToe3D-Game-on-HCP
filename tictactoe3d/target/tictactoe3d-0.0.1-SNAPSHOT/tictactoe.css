@@ -1,0 +1,93 @@
+      body {
+      	background-color: black;
+
+      }
+      
+      .spaceRow {
+        clear: both;
+        padding-top: 40px;
+        transform: skew(-40deg,5deg)
+
+      }
+    
+      .row {
+        clear: both;
+      }
+      
+      .tile, .space { 
+        position: relative; height: 40px; width: 40px;
+        float: left; margin: 1px 1px; white-space: nowrap;
+        line-height: 40px;
+      }      
+      .tile { 
+            background-color: #939393;
+            width: 10%;           
+       } 
+      .space { background: white; }
+      .R { background: #F00000; }
+      .B { background: green }
+      
+      #options { position: relative; margin-top: -51px; margin-left: 360px; }  
+      #board { margin-top: 140px; transform: skew(-40deg,5deg)  }               
+      
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        }
+      
+      li {
+        float: left;
+        position: relative;
+        width: 100px;
+        }
+      
+      li ul {
+        display: none;
+        position: absolute; 
+        top: 1em;
+        left: 0;
+        }
+      
+      li > ul {
+          top: auto;
+          left: auto;
+          }
+      
+      li:hover ul { display: block; }
+              
+      li.select { margin-top: 20px; }
+      li.select, li.select > ul { 
+          /*background: #D8D8D8;*/
+          background: #FFFFFF;
+          border: 1px solid #B8B8B8;
+      }
+      
+      div.select { margin-left: 5px; color: #000000; }
+      li.option { 
+          background: #D8D8D8; 
+          padding-left: 5px;
+          color: #000000;
+      }
+      li.option:hover { background: #E8E8E8; font-weight: 200 }
+      
+      #dialogDiv { 
+        border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px;
+        border: 2px solid grey;
+        background: #C8C8C8;
+        color: black; 
+        width: 250px;
+        height: 30px;
+        position: absolute;
+        margin-top: -258px;
+        margin-left: 225px;
+      }       
+      #dialogText { 
+        margin-left: 8px;
+        margin-top: 6px; 
+      }
+      #newGameButton { 
+        float: right; 
+        margin-right: 8px;
+        margin-top: -18px;
+      }
